@@ -5,10 +5,17 @@
 # See documentation in:
 # http://doc.scrapy.org/en/latest/topics/items.html
 
-import scrapy
+#import scrapy
+from scrapy.item import Item, Field
 
 
-class JustingItem(scrapy.Item):
+class JustingItem(Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
+    title = Field()
+    url = Field()
+    mp3_url = Field()
+    download = False
+
+    create_time = Field()
     pass
