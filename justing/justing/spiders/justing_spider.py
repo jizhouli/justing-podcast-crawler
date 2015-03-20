@@ -14,6 +14,8 @@ from scrapy.contrib.spiders import CrawlSpider
 from scrapy.http import Request
 from scrapy import log
 
+from justing.items import JustingItem
+
 class JustingSpider(CrawlSpider):
     name = 'justing'
     allowed_domains = ['justing.com.cn']
@@ -34,5 +36,11 @@ class JustingSpider(CrawlSpider):
 
     def parse(self, response):
         log.msg('-----\n%s\n-----' % str(response))
-        return []
+        item = JustingItem()
+        item['title'] = 'hello'
+        item['url'] = 'http://www.example.com'
+        item['mp3_url'] = 'http://www.example.com/example.mp3'
+        item['download'] = True
+        log.msg(str(item))
+        return item
 

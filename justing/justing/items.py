@@ -12,10 +12,10 @@ from scrapy.item import Item, Field
 class JustingItem(Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    title = Field()
+    title = Field(default='n/a')
     url = Field()
     mp3_url = Field()
-    download = False
+    download = Field()#False
 
     create_time = Field()
     pass

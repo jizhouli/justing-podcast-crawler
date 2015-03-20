@@ -17,3 +17,7 @@ NEWSPIDER_MODULE = 'justing.spiders'
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'justing (+http://www.yourdomain.com)'
 USER_AGENT = '%s/%s' % (BOT_NAME, BOT_VERSION)
+
+ITEM_PIPELINES = [
+        'justing.pipelines.ValidatePipeline',
+        ]
