@@ -15,7 +15,4 @@ class JustingItem(Item):
     title = Field(default='n/a')
     url = Field()
     mp3_url = Field()
-    download = Field()#False
-
-    create_time = Field()
     pass

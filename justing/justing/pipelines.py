@@ -18,8 +18,8 @@ class JustingPipeline(object):
 
 class ValidatePipeline(object):
     def process_item(self, item, spider):
-        log.msg("In ValidatePipeline", level=log.WARNING)        
         if item['title']:
+            log.msg("ValidatePipeline - valide item: %s" % str(item))
             return item
         else:
-            raise DropItem("title is empty")
+            raise DropItem("ValidatePipeline - title is empty: %s" % str(item))
