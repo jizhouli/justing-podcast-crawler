@@ -24,6 +24,9 @@
 ### 思路
 节目名称作为入参，抓取器通过网站提供的搜索功能获取节目列表，分析并获取详情页地址，然后下载相应的音频文件。
 
+
+> Just do it!
+
 ### 分析
 
 ####1. 搜索结果页的获取
@@ -64,7 +67,21 @@
 
 下面我们就可以在 Scrapy 的 Spider 中完成搜索结果页的抓取、解析，以及资源地址的拼接，最后通过 Pipeline 保存下载的mp3文件即可。
 
-> Just do it!
+####Scrapy框架下载文件
+参考了stackoverflow中的一个[解决方案](http://stackoverflow.com/questions/7123387/should-i-create-pipeline-to-save-files-with-scrapy)，决定采用Spider中发送下载请求，通过返回的Response.body构造item，随后在Pipeline中保存到文件中来实现。
+
+####文明抓取
+为了不对静雅思听服务器造成过高负载压力，将爬虫并发限制为2，在setting.py中设置如下
+
+**CONCURRENT_REQUEST=2**
+
+### 结果
+
+项目完成后，以"hello"作为关键词抓取，结果如下
+
+![抓取结果](image/hello_mp3_files.png)
+
+> Bingo!
 
 ### 后记
 
