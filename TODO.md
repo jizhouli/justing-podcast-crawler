@@ -26,6 +26,6 @@ http://dl.justing.com.cn/page/%E5%95%86%E4%B8%9A%E4%BB%B7%E5%80%BC07%EF%BC%9A%E6
 
 编码规则：URL编码，但空格在编码前被消除
 
-编码公式：http://dl.justing.com.cn/page/ + url_code( remove_space(title) )
+编码公式：http://dl.justing.com.cn/page/ + url_code( remove_space(title) ) + .mp3
 
 * 文件的下载与保存
