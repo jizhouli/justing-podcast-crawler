@@ -46,7 +46,7 @@
 
 观察可得列表项包含title标题和详情页地址，并且通过View XPath验证得到列表项的xpath表达式为
 
-  ** //div[@class='result']/h1/a **
+  **//div[@class='result']/h1/a**
 
 ####3. MP3资源地址的获取
 
@@ -56,7 +56,7 @@
 
 可见，服务器通过302错误重定向，在Location域中提供了mp3资源的真正地址，并且显而易见，是将title字段通过url编码encode后，拼接在 http://dl.justing.com.cn/page/ 后面得到的，即
 
-** 资源地址公式：http://dl.justing.com.cn/page/ + url_code( remove_space(title) ) + .mp3 **
+**资源地址公式：http://dl.justing.com.cn/page/ + url_code( remove_space(title) ) + .mp3**
 
 ### 执行
 
@@ -70,7 +70,7 @@
 
 通过这样的批量下载的方式，竟然可以绕过站点的VIP收费机制，直接对资源进行下载，OMG！
 
-** ( ⊙ o ⊙ )啊！ **
+**( ⊙ o ⊙ )啊！**
 
 ---
 
