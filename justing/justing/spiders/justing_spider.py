@@ -44,7 +44,7 @@ class JustingSpider(CrawlSpider):
                 url = "http://justing.com.cn/search_action.jsp",
                 formdata = {
                     'searchType': 'name',
-                    'searchWord': 'hello',
+                    'searchWord': 'hello',#'明朝出了个张居正',
                     },
 
                 headers = {
@@ -75,19 +75,35 @@ class JustingSpider(CrawlSpider):
             title = title.replace(' ', '')
             #log.msg(title)
 
-            url = response.meta['url_base'] + href
+            url = response.request.meta['url_base'] + href
             #log.msg(url)
 
             log.msg(str(type(title)))
             urlencode_title = title # urllib.quote(title)
-            mp3_url = response.meta['mp3_base'] + urlencode_title + '.mp3'
+            mp3_url = response.request.meta['mp3_base'] + urlencode_title + '.mp3'
             #log.msg(mp3_url)
 
-            item = JustingItem()
-            item['title'] = title
-            item['url'] = url
-            item['mp3_url'] = mp3_url
-            result.append(item)
+            # 发送mp3下载请求 refer: http://stackoverflow.com/questions/7123387/should-i-create-pipeline-to-save-files-with-scrapy
+            req = Request(
+                    url = url,
+                    callback=self.download,
+                    )
+            req.meta['title'] = title
+            req.meta['url'] = url
+            req.meta['mp3_url'] = mp3_url
+
+            result.append(req)
 
         return result
+
+    def download(self, response):
+        log.msg('download file content: %s' % str(response))
+
+        item = JustingItem()
+        item['title'] = response.request.meta['title']
+        item['url'] = response.request.meta['url']
+        item['mp3_url'] = response.request.meta['mp3_url']
+        item['mp3_content'] = response.body
+
+        return item
 

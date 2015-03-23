@@ -23,3 +23,11 @@ class ValidatePipeline(object):
             return item
         else:
             raise DropItem("ValidatePipeline - title is empty: %s" % str(item))
+
+class StoreToFilePipeline(object):
+    def process_item(self, item, spider):
+        path = './download/' + item['title'] + '.mp3'
+        with open(path, 'wb') as f:
+            f.write(item['mp3_content'])
+        del item['mp3_content']
+        return item

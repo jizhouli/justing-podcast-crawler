@@ -11,6 +11,8 @@
 BOT_NAME = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:16.0) Gecko/20100101 Firefox'
 BOT_VERSION = '1.0'
 
+CONCURRENT_REQUESTS = 2
+
 SPIDER_MODULES = ['justing.spiders']
 NEWSPIDER_MODULE = 'justing.spiders'
 
@@ -20,4 +22,5 @@ USER_AGENT = '%s/%s' % (BOT_NAME, BOT_VERSION)
 
 ITEM_PIPELINES = [
         'justing.pipelines.ValidatePipeline',
+        'justing.pipelines.StoreToFilePipeline',
         ]
