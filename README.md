@@ -1,9 +1,5 @@
 ## justing-podcast-crawler 一个资源抓取爬虫的实践
 
-*by [小拿](justinli.ljt@gmail.com)*
-
----
-
 [![GitHub stars](https://img.shields.io/github/stars/jizhouli/justing-podcast-crawler.svg)](https://github.com/jizhouli/justing-podcast-crawler/stargazers)
 [![GitHub license](https://img.shields.io/badge/license-GPLv2-blue.svg)](https://raw.githubusercontent.com/jizhouli/justing-podcast-crawler/master/LICENSE)
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jizhouli/justing-podcast-crawler?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
