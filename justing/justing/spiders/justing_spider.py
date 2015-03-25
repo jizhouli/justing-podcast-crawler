@@ -6,16 +6,10 @@
 http://justing.com.cn/
 '''
 
-import os
-import sys
-import time
-
 # FOR HTML DOM PARSE
 #from scrapy.selector import HtmlXPathSelector # is deprecated
 from scrapy.selector import Selector
-from scrapy.http import HtmlResponse
-
-import urllib
+#from scrapy.http import HtmlResponse
 
 from scrapy.contrib.spiders import CrawlSpider
 from scrapy.http import Request, FormRequest
