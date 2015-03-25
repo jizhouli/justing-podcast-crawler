@@ -1,4 +1,4 @@
-## justing-podcast-crawler 静雅思听网站Podcast批量抓取工具
+## justing-podcast-crawler 静雅思听Podcast批量抓取工具
 
 <!--
 [![GitHub stars](https://img.shields.io/github/stars/jizhouli/justing-podcast-crawler.svg)](https://github.com/jizhouli/justing-podcast-crawler/stargazers)
