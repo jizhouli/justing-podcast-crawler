@@ -1,11 +1,12 @@
-## justing-podcast-crawler 静雅思听Podcast批量抓取工具
+## 静雅思听Podcast批量抓取工具
 
 <!--
 [![GitHub stars](https://img.shields.io/github/stars/jizhouli/justing-podcast-crawler.svg)](https://github.com/jizhouli/justing-podcast-crawler/stargazers)
 [![GitHub license](https://img.shields.io/badge/license-GPLv2-blue.svg)](https://raw.githubusercontent.com/jizhouli/justing-podcast-crawler/master/LICENSE)
 -->
-[![Build Status](https://travis-ci.org/jizhouli/justing-podcast-crawler.svg)](https://travis-ci.org/jizhouli/justing-podcast-crawler)
 [![Code Health](https://landscape.io/github/jizhouli/justing-podcast-crawler/master/landscape.svg?style=flat)](https://landscape.io/github/jizhouli/justing-podcast-crawler/master)
+[![Build Status](https://travis-ci.org/jizhouli/justing-podcast-crawler.svg)](https://travis-ci.org/jizhouli/justing-podcast-crawler)
+[![Coverage Status](https://coveralls.io/repos/jizhouli/justing-podcast-crawler/badge.svg)](https://coveralls.io/r/jizhouli/justing-podcast-crawler)
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jizhouli/justing-podcast-crawler?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 ###I 前言
