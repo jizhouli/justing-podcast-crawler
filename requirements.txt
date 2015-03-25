@@ -1,0 +1,2 @@
+MySQL-python==1.2.3
+Scrapy==0.24.5

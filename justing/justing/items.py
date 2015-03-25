@@ -16,4 +16,4 @@ class JustingItem(Item):
     url = Field()
     mp3_url = Field()
     mp3_content = Field()
-    pass
+
