@@ -105,3 +105,7 @@
 
 
 *powered by [Mou](http://25.io/mou/)*
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/jizhouli/justing-podcast-crawler/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
