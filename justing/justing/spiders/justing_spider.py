@@ -33,21 +33,24 @@ class JustingSpider(CrawlSpider):
         #         )
         # req.meta['source'] = 'search|name'
 
-        # 查询搜索结果
-        req = FormRequest(
-                url = "http://justing.com.cn/search_action.jsp",
-                formdata = {
-                    'searchType': 'name',
-                    'searchWord': 'hello',#'明朝出了个张居正',
-                    },
+        # input parameters by command line -a
+        self.search_words = self.search_words.split(',')
+        log.msg(str(self.search_words))
+        for word in self.search_words:
+            req = FormRequest(
+                    url = "http://justing.com.cn/search_action.jsp",
+                    formdata = {
+                        'searchType': 'name',
+                        'searchWord': word,
+                        },
 
-                headers = {
-                    'Referer': 'http://justing.com.cn/',
-                    },
-                )
-        req.meta['url_base'] = 'http://justing.com.cn'
-        req.meta['mp3_base'] = 'http://dl.justing.com.cn/page/'
-        requests.append(req)
+                    headers = {
+                        'Referer': 'http://justing.com.cn/',
+                        },
+                    )
+            req.meta['url_base'] = 'http://justing.com.cn'
+            req.meta['mp3_base'] = 'http://dl.justing.com.cn/page/'
+            requests.append(req)
 
         return requests
 
