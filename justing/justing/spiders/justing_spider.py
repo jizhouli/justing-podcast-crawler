@@ -34,6 +34,17 @@ class JustingSpider(CrawlSpider):
         # req.meta['source'] = 'search|name'
 
         # input parameters by command line -a
+
+        # 判断 -a search_words 参数是否输入
+        if not hasattr(self, 'search_words'):
+            log.msg('search_words parameter is not input, please input like:\nscrapy crawl justing -a search_words="book1,book2"', level=log.ERROR)
+            return requests
+
+        # 判断 search_words 参数是否为空字符串
+        if len(self.search_words) == 0:
+            log.msg('search_words parameter is empty, please input like:\nscrapy crawl justing -a search_words="book1,book2"', level=log.ERROR)
+            return requests
+
         self.search_words = self.search_words.split(',')
         log.msg(str(self.search_words))
         for word in self.search_words:
