@@ -8,7 +8,10 @@
 1. ~~完成搜索结果页的解析~~
 1. ~~构造MP3资源地址列表~~
 1. ~~下载并保存资源~~
+1. ~~增加命令行参数输入搜索标题的功能~~
 
 ### Problems
 * ~~MP3资源文件源地址分析~~
 * ~~文件的下载与保存~~
+
+**DO NOT USE TODO.md FILE AGAIN, TODO ITEMS ARE MOVED TO THE ISSUE SECTION**
