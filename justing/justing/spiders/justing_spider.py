@@ -41,7 +41,7 @@ class JustingSpider(CrawlSpider):
             return requests
 
         # 判断 search_words 参数是否为空字符串
-        if len(self.search_words) == 0:
+        if len(self.search_words) == 0: # pylint:disable=access-member-before-definition
             log.msg('search_words parameter is empty, please input like:\nscrapy crawl justing -a search_words="book1,book2"', level=log.ERROR)
             return requests
 
