@@ -3,12 +3,13 @@
 <!--
 [![GitHub stars](https://img.shields.io/github/stars/jizhouli/justing-podcast-crawler.svg)](https://github.com/jizhouli/justing-podcast-crawler/stargazers)
 [![GitHub license](https://img.shields.io/badge/license-GPLv2-blue.svg)](https://raw.githubusercontent.com/jizhouli/justing-podcast-crawler/master/LICENSE)
--->
 [![Stories in Ready](https://badge.waffle.io/jizhouli/justing-podcast-crawler.svg?label=ready&title=Ready)](http://waffle.io/jizhouli/justing-podcast-crawler)
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jizhouli/justing-podcast-crawler?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/jizhouli/justing-podcast-crawler/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+-->
 [![Code Health](https://landscape.io/github/jizhouli/justing-podcast-crawler/master/landscape.svg?style=flat)](https://landscape.io/github/jizhouli/justing-podcast-crawler/master)
 [![Build Status](https://travis-ci.org/jizhouli/justing-podcast-crawler.svg)](https://travis-ci.org/jizhouli/justing-podcast-crawler)
 [![Coverage Status](https://coveralls.io/repos/jizhouli/justing-podcast-crawler/badge.svg)](https://coveralls.io/r/jizhouli/justing-podcast-crawler)
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jizhouli/justing-podcast-crawler?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 ###I 前言
 
@@ -105,7 +106,3 @@
 
 
 *powered by [Mou](http://25.io/mou/)*
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/jizhouli/justing-podcast-crawler/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
