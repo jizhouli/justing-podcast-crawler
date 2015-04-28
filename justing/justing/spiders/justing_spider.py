@@ -86,14 +86,14 @@ class JustingSpider(CrawlSpider):
             url = response.request.meta['url_base'] + href
             #log.msg(url)
 
-            log.msg(str(type(title)))
+            #log.msg(str(type(title)))
             urlencode_title = title # urllib.quote(title)
             mp3_url = response.request.meta['mp3_base'] + urlencode_title + '.mp3'
             #log.msg(mp3_url)
 
             # 发送mp3下载请求 refer: http://stackoverflow.com/questions/7123387/should-i-create-pipeline-to-save-files-with-scrapy
             req = Request(
-                    url = url,
+                    url = mp3_url,
                     callback=self.download,
                     )
             req.meta['title'] = title
